@@ -1,7 +1,7 @@
 
 
 const template = document.createElement('template') as HTMLTemplateElement;
-
+// Create the html template that the web component will be attached to
 template.innerHTML = `
     <style>
         div {
@@ -25,7 +25,7 @@ class SearchResult extends HTMLElement {
 
 
     }
-
+    // Method must be static
     static get observedAttributes() {
         return ['name-attribute'];
     }
